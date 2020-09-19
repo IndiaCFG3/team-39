@@ -1,5 +1,6 @@
 var express          = require('express')
-var mongoose         = require('mongoose')
+var path             = require('path')
+/*var mongoose         = require('mongoose')
 var flash			 = require('connect-flash');
 var bodyParser       = require("body-parser")
 var methodOverride	 = require("method-override")
@@ -12,7 +13,6 @@ var emotinal_skills  = require('/models/emotional_skills')
 var Social_skills    = require('/models/social_skills')
 var Students         = require('/models/students')
 var Teachers         = require('/models/teachers')
-var app              = express();
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -27,8 +27,17 @@ app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
-app.get("/register", function(req, res){
+passport.deserializeUser(User.deserializeUser());*/
+
+var app              = express();
+//app.use(express.staticProvider(__dirname + '/public'));
+app.set('views', path.join(__dirname, '/views'));
+app.set('view engine', 'ejs');
+app.get("/",function(req,res){
+    var user=["a","b","c"];
+    res.render('sign_up',{user:user});
+});
+/*app.get("/register", function(req, res){
     res.render("register"); 
  });
  //handle sign up logic
@@ -79,9 +88,9 @@ mongoose.connect("mongodb+srv://akshit:akshit%231744@cluster0-cks3q.mongodb.net/
 	
 	useNewUrlParser:true,
 	useCreateIndex:true
-});
+});*/
 
 
-app.listen(3000,function(){
+app.listen(process.env.PORT,function(){
     console.log("server has started")
   });
