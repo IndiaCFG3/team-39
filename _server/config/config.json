@@ -1,0 +1,15 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://admin:admin123@ds127655.mlab.com:27655/students-review",
+        "JWT_SECRET": "SECRET#12345!",
+        "JWT_EXP": "30m"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb://admin:admin123@ds127655.mlab.com:27655/students-review",
+        "JWT_SECRET": "SECRET#12345!",
+        "JWT_EXP": "30m"
+    }
+}
+

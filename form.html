@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Student Dasboard Page</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: 'Acme', sans-serif;
+font-size: 0.8em;
+width: 73.5em;
+padding: 1em;
+border: 1px solid #ccc;
+background-color:#89b0f0;
+border-radius:10px;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border:none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+display: block;
+width: 100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-top: 1em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+body{
+background-color:#0242ab;
+}
+#ai{
+color:white;
+}
+
+
+</style>
+
+</head>
+<body>
+<div >
+<p><h1 style="color:white;">Student Dashboard</h1></p></div>
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>Name
+<input type="text" name="customer_name" required>
+</label> 
+</p>
+
+<fieldset>
+<legend>Gender</legend>
+<p><label class="choice"> <input type="radio" name="gen" required value="male"> Male</label></p>
+<p><label class="choice"> <input type="radio" name="gen" required value="female"> Female </label></p>
+<p><label class="choice"> <input type="radio" name="gen" required value="other">Other</label></p>
+
+</fieldset>
+  
+ <p>
+<label><h2>1.Collaboration</h2>
+</label> 
+</p>
+
+<fieldset>
+<legend>Interdependency</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ci1"> Does the Student ask questions </label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ci2"> Does the student listen to others' opinions in group discussion? </label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ci3">Does the student share ideas in the group?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ci4">Does the student share ideas in the group?</label></p>
+</fieldset>
+<fieldset>
+<legend>Ownership</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="co1"> Does the Student ask express himself/herself beyond comfort zone?</label></p>
+</fieldset>
+<fieldset>
+<legend>Support</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cs1"> Does the Student maintain eye contact and ask polite questions? </label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cs2"> Does the student hold themselves upto a high standard of success rate? </label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cs3">Does the student share ideas in the group?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cs4">Does the student share ideas in the group?</label></p>
+</fieldset>
+
+
+<p>
+<label><h2>2.Critical Thinking</h2>
+</label> 
+</p>
+
+<fieldset>
+<legend>Identify and Internalise Information</legend></legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cti1"> Does the Student identify the problem given?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cti2"> Does the Student take time to forma valid thought or argument?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cti3">Does the student listen to the opinion given by peers?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cti4">Does the student ask questions to enhance his/her understanding of the subject?</label></p>
+</fieldset>
+<fieldset>
+<legend>Make Connections</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="co1"> Does the Student ask express himself/herself beyond comfort zone?</label></p>
+</fieldset>
+<fieldset>
+<legend>Conclude With Evidence</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cmc1"> Does the Student identify similarities and differences in opinions?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cmc2"> Does the student find patterns across the ideas of a given problem?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cmc3">Does the student connect to the task through information or previous experiences?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="cmc4">Does the student correlate small details with the larger picture?</label></p>
+</fieldset>
+
+<p>
+<label><h2>3.Variable Parameters</h2>
+</label> 
+</p>
+
+<fieldset>
+<legend>Openmindedness and Flexibility</legend></legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vo1"> Does the Student constantly try to improve himself\herself?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vo2"> Does the Student like to brainstorm newer ideas?</label></p>
+</fieldset>
+<fieldset>
+<legend>Imaginative Thinking</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vi1"> Does the Student ask express himself/herself beyond comfort zone?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vi2"> Does the Student generate ideas even in critical situation?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vi3"> Does the Student deploy imagination to improvise a solution?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vi4"> Does the Student take on any challenging task confidently?</label></p>
+
+
+</fieldset>
+<fieldset>
+<legend>Experimentation</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ve1"> Does the Student explore multiple ways to solve a problem?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ve2"> Does the student implement learning and feedback to improve ideas?</label></p>
+<p><label class="choice"> <input type="checkbox" name="extras" value="ve3">Does the student scan through different solutions before choosing the best solution?</label></p>
+</fieldset>
+<fieldset>
+<legend>Navigating Complexity</legend>
+<p><label class="choice"> <input type="checkbox" name="extras" value="vn1"> Does the Student persist and learn through mistakes?</label></p>
+</fieldset>
+
+
+<p>
+<label>Reasons for Your Observation
+<textarea name="comments" maxlength="500"></textarea>
+</label>
+</p>
+
+<p><button>Submit Booking</button></p>
+
+</form>
+
+</body>
+</html>
