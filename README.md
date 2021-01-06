@@ -1,3 +1,5 @@
 # Team-39
 A Web app that helps the educators of Social Good Organisation- Simple Education Foundation to collect the data of students regarding there performance in various aspects of Social and Emotional Learning.
 The data collected can then be visualised in form of charts and the app shall generate valuable feedback helping the educators to plan out future activities
+
+##### The code ("Code") in this repository was created solely by the student teams during a coding competition hosted by JPMorgan Chase Bank, N.A. ("JPMC").						JPMC did not create or contribute to the development of the Code.  This Code is provided AS IS and JPMC makes no warranty of any kind, express or implied, as to the Code,						including but not limited to, merchantability, satisfactory quality, non-infringement, title or fitness for a particular purpose or use.
